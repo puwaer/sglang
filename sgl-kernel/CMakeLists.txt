@@ -216,7 +216,7 @@ if (ENABLE_BELOW_SM90)
 
 endif()
 
-if ("${CUDA_VERSION}" VERSION_GREATER_EQUAL "12.8" OR SGL_KERNEL_ENABLE_SM100A)
+if (FALSE)
     list(APPEND SGL_KERNEL_CUDA_FLAGS
         "-gencode=arch=compute_100a,code=sm_100a"
         "-gencode=arch=compute_120a,code=sm_120a"
@@ -249,7 +249,7 @@ if ("${CUDA_VERSION}" VERSION_GREATER_EQUAL "12.4")
     )
 endif()
 
-if ("${CUDA_VERSION}" VERSION_GREATER_EQUAL "12.8" OR SGL_KERNEL_ENABLE_FP4)
+if (FALSE)
     list(APPEND SGL_KERNEL_CUDA_FLAGS
         "-DENABLE_NVFP4=1"
     )
