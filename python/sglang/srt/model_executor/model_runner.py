@@ -48,6 +48,7 @@ from sglang.srt.configs import (
     Qwen3_5Config,
     Qwen3_5MoeConfig,
     Qwen3NextConfig,
+    SusonoConfig,
 )
 from sglang.srt.configs.device_config import DeviceConfig
 from sglang.srt.configs.load_config import LoadConfig, LoadFormat
@@ -1837,7 +1838,8 @@ class ModelRunner(ModelRunnerKVCacheMixin):
             | Qwen3_5Config
             | Qwen3_5MoeConfig
             | JetNemotronConfig
-            | JetVLMConfig,
+            | JetVLMConfig
+            | SusonoConfig,
         ):
             return config
         return None

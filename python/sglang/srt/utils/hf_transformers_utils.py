@@ -89,6 +89,7 @@ from sglang.srt.configs import (
     Qwen3NextConfig,
     Step3p5Config,
     Step3VLConfig,
+    SusonoConfig,
 )
 from sglang.srt.configs.deepseek_ocr import DeepseekVLV2Config
 from sglang.srt.configs.internvl import InternVLChatConfig
@@ -125,6 +126,7 @@ _CONFIG_REGISTRY: List[Type[PretrainedConfig]] = [
     JetVLMConfig,
     KimiK25Config,
     Step3p5Config,
+    SusonoConfig,
 ]
 
 _CONFIG_REGISTRY = {
